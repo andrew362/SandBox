@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Andrzej Lichoń">
+    <meta name="description" content="Zadanie rekrutacyjne">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuickForm</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,500" rel="stylesheet">
+    <link rel="stylesheet" href="style/custom.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="row">
+                <h1><span>Zadanie</span> testowe</h1>
+            </div>
+        </header>
+        <main>
+            <section id="contact-form">
+                <div class="row title">
+                        <h2>1. Zakoduj formularz</h2>
+                </div>
+                <div class="row">
+                    <form id="form" action="send-script.php" method="POST" class="col s12"  novalidate>
+                        <div class="row">
+                            <div class="input-field col s4">
+                                <input type="text" id="first_name" name="first_name" required>
+                                <i class="tiny validateIcon material-icons">check_circle</i>
+                                <label for="first_name">Podaj imię</label>
+                                <span class="helper-text" data-error="Wprowadź swoje imię."></span>
+                            </div>
+                            <div class="input-field col s4">
+                                <input type="text" id="last_name" name="last_name">
+                                <label for="last_name">Podaj nazwisko</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <select id="age" name="age">
+                                    <option class="first" value="" disabled selected>Ile masz lat?</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="where_you_live" name="where_you_live">
+                                <label for="where_you_live">Gdzie mieszkasz?</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="email" id="email" name="email" required>
+                                <i class="tiny validateIcon material-icons">check_circle</i>
+                                <label for="email">Podaj adres e-mail</label>
+                                <span class="helper-text" data-error="Wprowadź swój email."></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="submit input-field col s12">
+                                <button id="submitBtn" class="btn waves-effect waves-light col s12 " type="submit" name="action">Wyślij
+                                    formularz</button>
+                            </div>
+                        <div class="row">
+                            <div id="progressbar" class="progress hide">
+                                <div class="indeterminate"></div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+            <section id="carousel">
+                <div class="row title">
+                    <h2>2. Zakoduj slajder</h2>
+                </div>
+
+                <div class="row">
+                    <div class="owl-carousel ">
+                        <a class="item" href="#one!">
+                            <img src="img/slajd1jpg" alt="Item">
+                            <h4>Slajder #1</h4>
+                            <p>Lorem ipsum lorem ipsum</p>
+                        </a>
+                        <a class="item" href="#two!">
+                            <img src="img/slajd2.jpg" alt="Item">
+                            <h4>Slajder #2</h4>
+                            <p>Lorem ipsum lorem ipsum</p>
+                        </a>
+                        <a class="item" href="#three!">
+                            <img src="img/slajd3.jpg" alt="Item">
+                            <h4>Slajder #3</h4>
+                            <p>Lorem ipsum lorem ipsum</p>
+                        </a>
+                        <a class="item" href="#four!">
+                            <img src="https://picsum.photos/360/225/" alt="Item">
+                            <h4>Slajder #4</h4>
+                            <p>Lorem ipsum lorem ipsum</p>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="row ">
+                <h2><span>Koniec</span> zadania ;)</h2>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script/owl.carousel.min.js"></script>
+    <script src="script/emailValuation.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

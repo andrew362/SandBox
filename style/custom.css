@@ -1,0 +1,236 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  width: 1140px;
+  margin: auto;
+}
+
+.row.title h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+#form {
+  width: 100%;
+  padding: 0;
+}
+
+#form .row {
+  margin-bottom: 10px;
+}
+
+#form .row:first-child input {
+  width: 322px;
+  height: 75px;
+}
+
+#form .row:nth-child(2) input {
+  width: 517px;
+  height: 75px;
+}
+
+#form .row .input-field {
+  margin: 0;
+}
+
+#form .row .input-field input[type=text],
+#form .row .input-field input[type=email] {
+  border: 1px solid #eaeaea !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 500;
+  margin: 0;
+  color: #717171;
+  padding-left: 36px;
+  border-radius: 4px;
+}
+
+#form .row .input-field input[type=text]:focus,
+#form .row .input-field input[type=email]:focus {
+  border: 1px solid #00c352 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#form .row .input-field input[type=text]:focus + label,
+#form .row .input-field input[type=email]:focus + label {
+  opacity: 0;
+}
+
+#form .row .input-field input[type=text].valid,
+#form .row .input-field input[type=email].valid {
+  border: 1px solid #00c352 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#form .row .input-field input[type=text].invalid,
+#form .row .input-field input[type=email].invalid {
+  border: 1px solid #f00 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#form .row .input-field input[type=text].select-dropdown,
+#form .row .input-field input[type=email].select-dropdown {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+#form .row .input-field input[type=text].valid + i.material-icons,
+#form .row .input-field input[type=email].valid + i.material-icons {
+  opacity: 1;
+}
+
+#form .row .input-field i.material-icons {
+  position: absolute;
+  top: 28px;
+  right: 50px;
+  color: #00c352;
+  opacity: 0;
+  font-size: 22px;
+}
+
+#form .row .input-field label {
+  color: #717171;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-left: 36px;
+  opacity: 0.6;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+#form .row .input-field label.active {
+  opacity: 0;
+}
+
+#form .row .input-field .select-wrapper .caret {
+  right: 36px;
+}
+
+#form .row .input-field .select-wrapper .caret path:first-child {
+  stroke: rgba(0, 0, 0, 0.4);
+  d: path("M 7 10 l 5 5 l 5 -5");
+  fill: none;
+}
+
+#form .row .submit {
+  height: 75px;
+}
+
+#form .row .submit #submitBtn {
+  height: 100%;
+  color: #fff;
+  background-color: #00c352;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+#progressbarv {
+  margin-top: 10px;
+}
+
+#carousel {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#carousel .owl-carousel {
+  width: 100%;
+}
+
+#carousel .owl-carousel .item img {
+  width: 360px;
+  height: 225px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+#carousel .owl-carousel .item h4,
+#carousel .owl-carousel .item p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#carousel .owl-carousel .item h4 {
+  margin-top: 20px;
+}
+
+#carousel .owl-carousel .item p {
+  font-weight: 300;
+}
+
+#carousel .owl-carousel .owl-dots {
+  position: absolute;
+  top: -68px;
+  right: 0;
+}
+
+#carousel .owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d3d3d3;
+  margin-left: 10px;
+  border-radius: 20%;
+}
+
+#carousel .owl-carousel .owl-dots .owl-dot.active {
+  background-color: #00c352;
+  width: 20px;
+}
+
+header h2,
+header h1,
+footer h2,
+footer h1 {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 26px;
+  margin: 100px 0;
+  margin-bottom: 85px;
+}
+
+header h2 span,
+header h1 span,
+footer h2 span,
+footer h1 span {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    width: auto;
+    padding: 0 30px;
+  }
+  #form .row .input-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #form .row .input-field input {
+    width: 100%;
+    margin: auto;
+    padding-left: 0 !important;
+  }
+  #form .row .input-field .select-wrapper input {
+    padding-left: 36px !important;
+    width: calc(100% - 36px);
+  }
+}
+/*# sourceMappingURL=custom.css.map */
